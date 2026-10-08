@@ -1,8 +1,81 @@
-<!DOCTYPE html><html lang='ru'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'><title>Контакты — Городской Шаг</title><link rel='stylesheet' href='style.css'></head><body><header><div class='container head'><a class='logo' href='index.html'>ГОРОДСКОЙ <b>ШАГ</b></a><nav><a href='index.html'>Главная</a><a href='about.html'>О проекте</a><a href='catalog.html'>Услуги</a><a href='price.html'>Прайс</a><a href='contacts.html'>Контакты</a></nav></div></header>
-<main class="container"><p class="label">СВЯЗЬ</p><h1>Контакты и карта проезда</h1>
-<div class="contact"><section class="card"><h2>Наш адрес</h2>
-<p class="address"><b>241035, Брянск, Бежицкий район,<br>бульвар 50-летия Октября, 7</b></p>
-<h3>График работы</h3><p>Понедельник — пятница<br>10:00 — 18:00</p>
-<h3>Контакты</h3><p>+7 (4832) 00-00-00<br>hello@gorodskoi-shag.example</p></section>
-<section><iframe class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=34.3008%2C53.3028%2C34.3070%2C53.3062&layer=mapnik&marker=53.304393%2C34.303795" title="Карта БГТУ"></iframe>
-<p class="description">На карте отмечен адрес: 241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.</p></section></div></main><footer><div class='container'><b>Городской Шаг</b> · учебный проект · 241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7</div></footer></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Учебный сайт «Городской Шаг»">
+    <title>Контакты — Городской Шаг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container head">
+            <a class="brand" href="index.html">ГОРОДСКОЙ <b>ШАГ</b></a>
+            <nav>
+    <a class="" href="index.html">Главная</a>
+    <a class="" href="about.html">О проекте</a>
+    <a class="" href="catalog.html">Услуги</a>
+    <a class="" href="price.html">Прайс</a>
+    <a class="active" href="contacts.html">Контакты</a>
+</nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <span class="tag">Обратная связь</span>
+        <h1>Контакты и карта проезда</h1>
+
+        <div class="contact-grid">
+            <section class="card">
+                <h2>Наш адрес</h2>
+                <p class="address">
+                    <b>Брянск, Бежицкий район</b><br>
+                    бульвар 50-летия Октября, 7
+                </p>
+
+                <h3>График работы</h3>
+                <p>
+                    Понедельник — пятница<br>
+                    10:00 — 18:00
+                </p>
+
+                <h3>Контакты</h3>
+                <p>
+                    Телефон: +7 (4832) 00-00-00<br>
+                    Email: hello@gorodskoi-shag.example
+                </p>
+
+                <div class="notice">
+                    Контактные данные используются в учебном проекте.
+                </div>
+            </section>
+
+            <section>
+                <h2>Карта проезда</h2>
+
+                <iframe
+                    class="map"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=34.3008%2C53.3028%2C34.3070%2C53.3062&amp;layer=mapnik&amp;marker=53.304393%2C34.303795"
+                    title="Карта проезда к адресу">
+                </iframe>
+
+                <p class="lead">
+                    На карте отмечен адрес:
+                    241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
+                </p>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <strong>Городской Шаг</strong> — учебный проект.
+            <br>
+            241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
+            <br>
+            Обновлено: 08.10.2026.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,10 +1,104 @@
-<!DOCTYPE html><html lang='ru'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'><title>Прайс — Городской Шаг</title><link rel='stylesheet' href='style.css'></head><body><header><div class='container head'><a class='logo' href='index.html'>ГОРОДСКОЙ <b>ШАГ</b></a><nav><a href='index.html'>Главная</a><a href='about.html'>О проекте</a><a href='catalog.html'>Услуги</a><a href='price.html'>Прайс</a><a href='contacts.html'>Контакты</a></nav></div></header>
-<main class="container"><p class="label">СТОИМОСТЬ</p><h1>Прайс-лист</h1>
-<p class="description">Учебные цены приведены в рублях и не являются коммерческим предложением.</p>
-<table><tr><th>Услуга</th><th>Состав работы</th><th>Срок</th><th>Цена</th></tr>
-<tr><td>Лендинг «Старт»</td><td>1 страница</td><td>2–3 дня</td><td>9 500 ₽</td></tr>
-<tr><td>Сайт «Команда»</td><td>5 страниц, меню</td><td>5–7 дней</td><td>18 900 ₽</td></tr>
-<tr><td>Афиша события</td><td>Страница события</td><td>2 дня</td><td>6 700 ₽</td></tr>
-<tr><td>Набор для соцсетей</td><td>6 цифровых макетов</td><td>3–4 дня</td><td>8 400 ₽</td></tr>
-<tr><td>Обновление сайта</td><td>Текст и оформление</td><td>1–2 дня</td><td>4 800 ₽</td></tr>
-<tr><td>Подготовка к публикации</td><td>Проверка файлов</td><td>1 день</td><td>2 500 ₽</td></tr></table></main><footer><div class='container'><b>Городской Шаг</b> · учебный проект · 241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7</div></footer></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Учебный сайт «Городской Шаг»">
+    <title>Прайс — Городской Шаг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container head">
+            <a class="brand" href="index.html">ГОРОДСКОЙ <b>ШАГ</b></a>
+            <nav>
+    <a class="" href="index.html">Главная</a>
+    <a class="" href="about.html">О проекте</a>
+    <a class="" href="catalog.html">Услуги</a>
+    <a class="active" href="price.html">Прайс</a>
+    <a class="" href="contacts.html">Контакты</a>
+</nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <span class="tag">Стоимость</span>
+        <h1>Прайс-лист</h1>
+        <p class="lead">
+            Учебные цены приведены в рублях и не являются коммерческим предложением.
+        </p>
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Услуга</th>
+                    <th>Состав работы</th>
+                    <th>Срок</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="basic">
+                    <td>Лендинг «Старт»</td>
+                    <td>1 страница, адаптивная вёрстка</td>
+                    <td>2–3 дня</td>
+                    <td class="price">9 500 ₽</td>
+                </tr>
+
+                <tr class="standard">
+                    <td>Сайт «Команда»</td>
+                    <td>5 страниц, меню, единый стиль</td>
+                    <td>5–7 дней</td>
+                    <td class="price">18 900 ₽</td>
+                </tr>
+
+                <tr class="basic">
+                    <td>Афиша события</td>
+                    <td>Страница события и программа</td>
+                    <td>2 дня</td>
+                    <td class="price">6 700 ₽</td>
+                </tr>
+
+                <tr class="premium">
+                    <td>Набор для соцсетей</td>
+                    <td>6 цифровых макетов</td>
+                    <td>3–4 дня</td>
+                    <td class="price">8 400 ₽</td>
+                </tr>
+
+                <tr class="standard">
+                    <td>Обновление сайта</td>
+                    <td>Текст, блоки и визуальная переработка</td>
+                    <td>1–2 дня</td>
+                    <td class="price">4 800 ₽</td>
+                </tr>
+
+                <tr class="premium">
+                    <td>Подготовка к публикации</td>
+                    <td>Проверка и упаковка файлов</td>
+                    <td>1 день</td>
+                    <td class="price">2 500 ₽</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="notice">
+            <b>Обозначение цветов:</b>
+            базовые услуги, стандартные услуги и дополнительные услуги выделены разными цветами,
+            как требуется для оформления прайс-листа.
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <strong>Городской Шаг</strong> — учебный проект.
+            <br>
+            241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
+            <br>
+            Обновлено: 08.10.2026.
+        </div>
+    </footer>
+</body>
+</html>
