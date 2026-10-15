@@ -1,91 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Учебный сайт «Городской Шаг»">
-    <title>О проекте — Городской Шаг</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Гостевой дом Уютный берег: номера, услуги, цены и контакты.">
+	<title>О гостевом доме — Уютный берег</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container head">
-            <a class="brand" href="index.html">ГОРОДСКОЙ <b>ШАГ</b></a>
-            <nav>
-    <a class="" href="index.html">Главная</a>
-    <a class="active" href="about.html">О проекте</a>
-    <a class="" href="catalog.html">Услуги</a>
-    <a class="" href="price.html">Прайс</a>
-    <a class="" href="contacts.html">Контакты</a>
-</nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <span class="tag">О проекте</span>
-        <h1>О компании «Городской Шаг»</h1>
-        <p class="lead">
-            «Городской Шаг» — учебный проект, посвящённый созданию
-            простых и понятных цифровых решений для небольших организаций и инициатив.
-        </p>
-
-        <div class="grid">
-            <section class="card">
-                <div class="number">01</div>
-                <h2>Цель</h2>
-                <p>
-                    Помогать небольшим проектам представить информацию
-                    в сети Интернет в удобном виде.
-                </p>
-            </section>
-
-            <section class="card">
-                <div class="number">02</div>
-                <h2>Принцип работы</h2>
-                <p>
-                    Сначала определяется задача, затем создаётся структура,
-                    оформляется дизайн и выполняется проверка сайта.
-                </p>
-            </section>
-
-            <section class="card">
-                <div class="number">03</div>
-                <h2>Результат</h2>
-                <p>
-                    Готовый многостраничный сайт с единым стилем,
-                    меню и адаптацией под разные размеры экрана.
-                </p>
-            </section>
-        </div>
-
-        <section class="card">
-            <h2>Основные показатели учебного проекта</h2>
-            <p><b>Количество страниц:</b> 5.</p>
-            <p><b>Основные разделы:</b> главная, о проекте, услуги, прайс и контакты.</p>
-            <p><b>Навигация:</b> единое меню присутствует на каждой странице.</p>
-            <p><b>Карта:</b> интерактивная карта OpenStreetMap размещена на странице контактов.</p>
-        </section>
-
-        <section class="card">
-            <h2>Рабочий процесс</h2>
-            <div class="steps">
-                <div class="step"><b>1. Задача</b><br>Определяем цель сайта.</div>
-                <div class="step"><b>2. Структура</b><br>Разделяем информацию на страницы.</div>
-                <div class="step"><b>3. Оформление</b><br>Создаём единый стиль.</div>
-                <div class="step"><b>4. Публикация</b><br>Проверяем ссылки и файлы.</div>
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <div class="container">
-            <strong>Городской Шаг</strong> — учебный проект.
-            <br>
-            241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
-            <br>
-            Обновлено: 08.10.2026.
-        </div>
-    </footer>
+	<div class="page-shell">
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Гостевой дом Уютный берег — главная страница">
+			<img src="images/logo.svg" alt="Логотип гостевого дома Уютный берег" width="220" height="90">
+		</a>
+		<div class="header-copy">
+			<p class="eyebrow">Тихий отдых в городе</p>
+			<h1>Гостевой дом «Уютный берег»</h1>
+			<p>Комфортные номера, домашний завтрак и тёплый приём.</p>
+		</div>
+	</header>
+	<nav class="main-nav" aria-label="Основная навигация">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="about.html" aria-current="page">О гостевом доме</a></li>
+			<li><a href="catalog.html">Номера и услуги</a></li>
+			<li><a href="price.html">Цены</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+		<div class="page-layout">
+			<aside class="sidebar">
+				<section class="side-card">
+					<h2>Почему у нас?</h2>
+					<ul class="check-list">
+						<li>Тихие и чистые номера</li>
+						<li>Завтрак по-домашнему</li>
+						<li>Бесплатный Wi-Fi</li>
+						<li>Удобное расположение</li>
+					</ul>
+				</section>
+				<section class="side-card side-contact">
+					<h2>Бронирование</h2>
+					<p>Поможем выбрать номер и ответим на вопросы.</p>
+					<a class="button button-light" href="contacts.html">Связаться с нами</a>
+				</section>
+				<img class="sidebar-photo" src="images/garden.svg" alt="Гостевой дом среди зелёного сада">
+			</aside>
+			<main class="main-content">
+				<section class="content-section">
+					<p class="eyebrow">Наша история</p><h2>Место, где можно выдохнуть</h2>
+					<p class="lead">Гостевой дом «Уютный берег» создан для гостей, которым важно чувствовать себя спокойно и свободно даже вдали от дома.</p>
+					<p>Мы придерживаемся простых принципов: чистые помещения, доброжелательное общение, понятные цены и помощь гостям в бытовых вопросах. Наша команда подскажет, где поужинать, как добраться до нужного места и чем заняться в свободное время.</p>
+					<img class="content-photo" src="images/house.svg" alt="Здание и зелёная территория гостевого дома">
+				</section>
+				<section class="stat-grid"><div><strong>12</strong><span>уютных номеров</span></div><div><strong>24/7</strong><span>приём обращений</span></div><div><strong>Wi-Fi</strong><span>для всех гостей</span></div></section>
+				<section class="content-section"><h2>Наши правила</h2><ul class="check-list"><li>Заселение по предварительному бронированию.</li><li>Тихие часы — с 22:00 до 08:00.</li><li>Курение внутри здания запрещено.</li><li>Дополнительные пожелания лучше сообщить заранее.</li></ul></section>
+			</main>
+		</div>
+	<footer class="site-footer">
+		<p><strong>Гостевой дом «Уютный берег»</strong></p>
+		<p>Москва, ул. Тверская, д. 7</p>
+		<p>Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · Почта: <a href="mailto:info@uyutbereg.example">info@uyutbereg.example</a></p>
+		<p class="copyright">Учебный проект · Лабораторная работа № 2</p>
+	</footer>
+	</div>
+	<script src="js/site.js"></script>
 </body>
 </html>

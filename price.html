@@ -1,104 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Учебный сайт «Городской Шаг»">
-    <title>Прайс — Городской Шаг</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Гостевой дом Уютный берег: номера, услуги, цены и контакты.">
+	<title>Цены — Уютный берег</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container head">
-            <a class="brand" href="index.html">ГОРОДСКОЙ <b>ШАГ</b></a>
-            <nav>
-    <a class="" href="index.html">Главная</a>
-    <a class="" href="about.html">О проекте</a>
-    <a class="" href="catalog.html">Услуги</a>
-    <a class="active" href="price.html">Прайс</a>
-    <a class="" href="contacts.html">Контакты</a>
-</nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <span class="tag">Стоимость</span>
-        <h1>Прайс-лист</h1>
-        <p class="lead">
-            Учебные цены приведены в рублях и не являются коммерческим предложением.
-        </p>
-
-        <table class="price-table">
-            <thead>
-                <tr>
-                    <th>Услуга</th>
-                    <th>Состав работы</th>
-                    <th>Срок</th>
-                    <th>Цена</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr class="basic">
-                    <td>Лендинг «Старт»</td>
-                    <td>1 страница, адаптивная вёрстка</td>
-                    <td>2–3 дня</td>
-                    <td class="price">9 500 ₽</td>
-                </tr>
-
-                <tr class="standard">
-                    <td>Сайт «Команда»</td>
-                    <td>5 страниц, меню, единый стиль</td>
-                    <td>5–7 дней</td>
-                    <td class="price">18 900 ₽</td>
-                </tr>
-
-                <tr class="basic">
-                    <td>Афиша события</td>
-                    <td>Страница события и программа</td>
-                    <td>2 дня</td>
-                    <td class="price">6 700 ₽</td>
-                </tr>
-
-                <tr class="premium">
-                    <td>Набор для соцсетей</td>
-                    <td>6 цифровых макетов</td>
-                    <td>3–4 дня</td>
-                    <td class="price">8 400 ₽</td>
-                </tr>
-
-                <tr class="standard">
-                    <td>Обновление сайта</td>
-                    <td>Текст, блоки и визуальная переработка</td>
-                    <td>1–2 дня</td>
-                    <td class="price">4 800 ₽</td>
-                </tr>
-
-                <tr class="premium">
-                    <td>Подготовка к публикации</td>
-                    <td>Проверка и упаковка файлов</td>
-                    <td>1 день</td>
-                    <td class="price">2 500 ₽</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="notice">
-            <b>Обозначение цветов:</b>
-            базовые услуги, стандартные услуги и дополнительные услуги выделены разными цветами,
-            как требуется для оформления прайс-листа.
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="container">
-            <strong>Городской Шаг</strong> — учебный проект.
-            <br>
-            241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
-            <br>
-            Обновлено: 08.10.2026.
-        </div>
-    </footer>
+	<div class="page-shell">
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Гостевой дом Уютный берег — главная страница">
+			<img src="images/logo.svg" alt="Логотип гостевого дома Уютный берег" width="220" height="90">
+		</a>
+		<div class="header-copy">
+			<p class="eyebrow">Тихий отдых в городе</p>
+			<h1>Гостевой дом «Уютный берег»</h1>
+			<p>Комфортные номера, домашний завтрак и тёплый приём.</p>
+		</div>
+	</header>
+	<nav class="main-nav" aria-label="Основная навигация">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="about.html">О гостевом доме</a></li>
+			<li><a href="catalog.html">Номера и услуги</a></li>
+			<li><a href="price.html" aria-current="page">Цены</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+		<div class="page-layout">
+			<aside class="sidebar">
+				<section class="side-card">
+					<h2>Почему у нас?</h2>
+					<ul class="check-list">
+						<li>Тихие и чистые номера</li>
+						<li>Завтрак по-домашнему</li>
+						<li>Бесплатный Wi-Fi</li>
+						<li>Удобное расположение</li>
+					</ul>
+				</section>
+				<section class="side-card side-contact">
+					<h2>Бронирование</h2>
+					<p>Поможем выбрать номер и ответим на вопросы.</p>
+					<a class="button button-light" href="contacts.html">Связаться с нами</a>
+				</section>
+				<img class="sidebar-photo" src="images/garden.svg" alt="Гостевой дом среди зелёного сада">
+			</aside>
+			<main class="main-content">
+				<section class="content-section"><p class="eyebrow">Стоимость проживания</p><h2>Понятные цены без скрытых доплат</h2><p class="lead">Итоговая стоимость зависит от даты, количества гостей и продолжительности проживания. Уточните наличие свободных номеров перед поездкой.</p></section>
+				<section class="price-list" aria-label="Прайс-лист"><article class="price-item price-heading"><span>Услуга</span><span>Описание</span><span>Стоимость</span></article><article class="price-item"><span class="price-name">Номер «Стандарт»</span><span>За одну ночь, до 2 гостей</span><strong>2 500 ₽</strong></article><article class="price-item price-highlight"><span class="price-name">Номер «Комфорт»</span><span>За одну ночь, до 2 гостей</span><strong>3 400 ₽</strong></article><article class="price-item"><span class="price-name">Завтрак</span><span>На одного гостя</span><strong>450 ₽</strong></article><article class="price-item"><span class="price-name">Дополнительное место</span><span>За одну ночь</span><strong>700 ₽</strong></article><article class="price-item"><span class="price-name">Раннее заселение</span><span>При наличии возможности</span><strong>от 500 ₽</strong></article></section>
+				<p class="small-note">Цены приведены для учебного проекта и могут быть изменены. Финальная стоимость подтверждается при бронировании.</p><section class="notice-panel"><div><h2>Хотите забронировать номер?</h2><p>Напишите нам даты поездки и количество гостей.</p></div><a class="button" href="contacts.html">Оставить заявку</a></section>
+			</main>
+		</div>
+	<footer class="site-footer">
+		<p><strong>Гостевой дом «Уютный берег»</strong></p>
+		<p>Москва, ул. Тверская, д. 7</p>
+		<p>Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · Почта: <a href="mailto:info@uyutbereg.example">info@uyutbereg.example</a></p>
+		<p class="copyright">Учебный проект · Лабораторная работа № 2</p>
+	</footer>
+	</div>
+	<script src="js/site.js"></script>
 </body>
 </html>

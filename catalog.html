@@ -1,94 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Учебный сайт «Городской Шаг»">
-    <title>Услуги — Городской Шаг</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Гостевой дом Уютный берег: номера, услуги, цены и контакты.">
+	<title>Номера и услуги — Уютный берег</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container head">
-            <a class="brand" href="index.html">ГОРОДСКОЙ <b>ШАГ</b></a>
-            <nav>
-    <a class="" href="index.html">Главная</a>
-    <a class="" href="about.html">О проекте</a>
-    <a class="active" href="catalog.html">Услуги</a>
-    <a class="" href="price.html">Прайс</a>
-    <a class="" href="contacts.html">Контакты</a>
-</nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <span class="tag">Каталог</span>
-        <h1>Услуги студии</h1>
-        <p class="lead">
-            Ниже представлены основные услуги проекта.
-            Для каждой услуги указано назначение и результат работы.
-        </p>
-
-        <div class="grid">
-            <article class="card">
-                <img class="service-image" src="images/landing.svg" alt="Иллюстрация лендинга">
-                <div class="number">01</div>
-                <h2>Лендинг «Старт»</h2>
-                <p>Одна страница с заголовком, описанием, преимуществами и контактами.</p>
-                <p><b>Результат:</b> готовая презентационная страница.</p>
-            </article>
-
-            <article class="card">
-                <img class="service-image" src="images/multi.svg" alt="Иллюстрация многостраничного сайта">
-                <div class="number">02</div>
-                <h2>Сайт «Команда»</h2>
-                <p>Небольшой сайт с разделами о проекте, услугах, стоимости и контактах.</p>
-                <p><b>Результат:</b> структурированный сайт с меню.</p>
-            </article>
-
-            <article class="card">
-                <img class="service-image" src="images/event.svg" alt="Иллюстрация страницы мероприятия">
-                <div class="number">03</div>
-                <h2>Афиша события</h2>
-                <p>Страница для лекции, встречи или мастер-класса с программой и местом проведения.</p>
-                <p><b>Результат:</b> понятная страница мероприятия.</p>
-            </article>
-
-            <article class="card">
-                <img class="service-image" src="images/social.svg" alt="Иллюстрация материалов для социальных сетей">
-                <div class="number">04</div>
-                <h2>Набор для соцсетей</h2>
-                <p>Карточки и баннеры с едиными шрифтами, заголовками и визуальными акцентами.</p>
-                <p><b>Результат:</b> комплект из 6 макетов.</p>
-            </article>
-
-            <article class="card">
-                <img class="service-image" src="images/update.svg" alt="Иллюстрация обновления сайта">
-                <div class="number">05</div>
-                <h2>Обновление сайта</h2>
-                <p>Переработка текста, блоков и визуального оформления существующей страницы.</p>
-                <p><b>Результат:</b> обновлённая версия сайта.</p>
-            </article>
-
-            <article class="card">
-                <img class="service-image" src="images/publish.svg" alt="Иллюстрация публикации сайта">
-                <div class="number">06</div>
-                <h2>Подготовка к публикации</h2>
-                <p>Проверка файлов, ссылок и структуры перед размещением сайта в сети.</p>
-                <p><b>Результат:</b> готовый комплект файлов для хостинга.</p>
-            </article>
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="container">
-            <strong>Городской Шаг</strong> — учебный проект.
-            <br>
-            241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
-            <br>
-            Обновлено: 08.10.2026.
-        </div>
-    </footer>
+	<div class="page-shell">
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Гостевой дом Уютный берег — главная страница">
+			<img src="images/logo.svg" alt="Логотип гостевого дома Уютный берег" width="220" height="90">
+		</a>
+		<div class="header-copy">
+			<p class="eyebrow">Тихий отдых в городе</p>
+			<h1>Гостевой дом «Уютный берег»</h1>
+			<p>Комфортные номера, домашний завтрак и тёплый приём.</p>
+		</div>
+	</header>
+	<nav class="main-nav" aria-label="Основная навигация">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="about.html">О гостевом доме</a></li>
+			<li><a href="catalog.html" aria-current="page">Номера и услуги</a></li>
+			<li><a href="price.html">Цены</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+		<div class="page-layout">
+			<aside class="sidebar">
+				<section class="side-card">
+					<h2>Почему у нас?</h2>
+					<ul class="check-list">
+						<li>Тихие и чистые номера</li>
+						<li>Завтрак по-домашнему</li>
+						<li>Бесплатный Wi-Fi</li>
+						<li>Удобное расположение</li>
+					</ul>
+				</section>
+				<section class="side-card side-contact">
+					<h2>Бронирование</h2>
+					<p>Поможем выбрать номер и ответим на вопросы.</p>
+					<a class="button button-light" href="contacts.html">Связаться с нами</a>
+				</section>
+				<img class="sidebar-photo" src="images/garden.svg" alt="Гостевой дом среди зелёного сада">
+			</aside>
+			<main class="main-content">
+				<section class="content-section"><p class="eyebrow">Размещение</p><h2>Выберите свой вариант отдыха</h2><p class="lead">В каждом номере есть собственная ванная комната, полотенца, шкаф для вещей и доступ к Wi-Fi.</p></section>
+				<section class="room-grid">
+					<article class="room-card"><img src="images/room.svg" alt="Светлый стандартный номер с большой кроватью"><div class="room-copy"><h3>Стандарт</h3><p>Комфортный номер для одного или двух гостей. Подходит для короткой поездки.</p><p class="room-price">от 2 500 ₽ / ночь</p><a href="price.html">Условия и цены →</a></div></article>
+					<article class="room-card"><img src="images/room.svg" alt="Уютный номер повышенной комфортности"><div class="room-copy"><h3>Комфорт</h3><p>Больше пространства, зона отдыха и дополнительное место по запросу.</p><p class="room-price">от 3 400 ₽ / ночь</p><a href="price.html">Условия и цены →</a></div></article>
+				</section>
+				<section class="service-row" id="breakfast"><img src="images/breakfast.svg" alt="Завтрак с напитками и свежими продуктами"><div><p class="eyebrow">Дополнительные услуги</p><h2>Завтрак и забота о деталях</h2><p>По предварительному запросу можно заказать завтрак, раннее заселение или трансфер. Доступны хранение багажа и рекомендации по местным достопримечательностям.</p><a class="text-link" href="contacts.html">Уточнить доступность →</a></div></section>
+			</main>
+		</div>
+	<footer class="site-footer">
+		<p><strong>Гостевой дом «Уютный берег»</strong></p>
+		<p>Москва, ул. Тверская, д. 7</p>
+		<p>Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · Почта: <a href="mailto:info@uyutbereg.example">info@uyutbereg.example</a></p>
+		<p class="copyright">Учебный проект · Лабораторная работа № 2</p>
+	</footer>
+	</div>
+	<script src="js/site.js"></script>
 </body>
 </html>

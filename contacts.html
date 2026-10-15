@@ -1,81 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Учебный сайт «Городской Шаг»">
-    <title>Контакты — Городской Шаг</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Гостевой дом Уютный берег: номера, услуги, цены и контакты.">
+	<title>Контакты — Уютный берег</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container head">
-            <a class="brand" href="index.html">ГОРОДСКОЙ <b>ШАГ</b></a>
-            <nav>
-    <a class="" href="index.html">Главная</a>
-    <a class="" href="about.html">О проекте</a>
-    <a class="" href="catalog.html">Услуги</a>
-    <a class="" href="price.html">Прайс</a>
-    <a class="active" href="contacts.html">Контакты</a>
-</nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <span class="tag">Обратная связь</span>
-        <h1>Контакты и карта проезда</h1>
-
-        <div class="contact-grid">
-            <section class="card">
-                <h2>Наш адрес</h2>
-                <p class="address">
-                    <b>Брянск, Бежицкий район</b><br>
-                    бульвар 50-летия Октября, 7
-                </p>
-
-                <h3>График работы</h3>
-                <p>
-                    Понедельник — пятница<br>
-                    10:00 — 18:00
-                </p>
-
-                <h3>Контакты</h3>
-                <p>
-                    Телефон: +7 (4832) 00-00-00<br>
-                    Email: hello@gorodskoi-shag.example
-                </p>
-
-                <div class="notice">
-                    Контактные данные используются в учебном проекте.
-                </div>
-            </section>
-
-            <section>
-                <h2>Карта проезда</h2>
-
-                <iframe
-                    class="map"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=34.3008%2C53.3028%2C34.3070%2C53.3062&amp;layer=mapnik&amp;marker=53.304393%2C34.303795"
-                    title="Карта проезда к адресу">
-                </iframe>
-
-                <p class="lead">
-                    На карте отмечен адрес:
-                    241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
-                </p>
-            </section>
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="container">
-            <strong>Городской Шаг</strong> — учебный проект.
-            <br>
-            241035, Брянск, Бежицкий район, бульвар 50-летия Октября, 7.
-            <br>
-            Обновлено: 08.10.2026.
-        </div>
-    </footer>
+	<div class="page-shell">
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Гостевой дом Уютный берег — главная страница">
+			<img src="images/logo.svg" alt="Логотип гостевого дома Уютный берег" width="220" height="90">
+		</a>
+		<div class="header-copy">
+			<p class="eyebrow">Тихий отдых в городе</p>
+			<h1>Гостевой дом «Уютный берег»</h1>
+			<p>Комфортные номера, домашний завтрак и тёплый приём.</p>
+		</div>
+	</header>
+	<nav class="main-nav" aria-label="Основная навигация">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="about.html">О гостевом доме</a></li>
+			<li><a href="catalog.html">Номера и услуги</a></li>
+			<li><a href="price.html">Цены</a></li>
+			<li><a href="contacts.html" aria-current="page">Контакты</a></li>
+		</ul>
+	</nav>
+		<div class="page-layout">
+			<aside class="sidebar">
+				<section class="side-card">
+					<h2>Почему у нас?</h2>
+					<ul class="check-list">
+						<li>Тихие и чистые номера</li>
+						<li>Завтрак по-домашнему</li>
+						<li>Бесплатный Wi-Fi</li>
+						<li>Удобное расположение</li>
+					</ul>
+				</section>
+				<section class="side-card side-contact">
+					<h2>Бронирование</h2>
+					<p>Поможем выбрать номер и ответим на вопросы.</p>
+					<a class="button button-light" href="contacts.html">Связаться с нами</a>
+				</section>
+				<img class="sidebar-photo" src="images/garden.svg" alt="Гостевой дом среди зелёного сада">
+			</aside>
+			<main class="main-content">
+				<section class="content-section"><p class="eyebrow">Мы на связи</p><h2>Контакты и расположение</h2><p class="lead">Свяжитесь с нами, чтобы уточнить наличие номеров, время заезда и дополнительные услуги.</p></section>
+				<section class="contact-grid"><div class="contact-card"><h3>Адрес офиса</h3><p>Москва, ул. Тверская, д. 7</p><h3>Телефон</h3><p><a href="tel:+74950000000">+7 (495) 000-00-00</a></p><h3>Электронная почта</h3><p><a href="mailto:info@uyutbereg.example">info@uyutbereg.example</a></p><h3>Время связи</h3><p>Ежедневно, с 09:00 до 21:00</p></div><div class="contact-card"><h3>Запрос на бронирование</h3><form class="booking-form" id="booking-form"><label for="guest-name">Ваше имя</label><input id="guest-name" name="guest-name" type="text" required><label for="guest-email">Электронная почта</label><input id="guest-email" name="guest-email" type="email" required><label for="guest-message">Даты и пожелания</label><textarea id="guest-message" name="guest-message" rows="4" required></textarea><button class="button" type="submit">Подготовить письмо</button><p class="form-message" id="form-message" aria-live="polite">Форма подготовит текст письма, но не отправляет его автоматически.</p></form></div></section>
+				<section class="content-section"><h2>Как нас найти</h2><p>На карте отмечен офис проекта по адресу: Москва, ул. Тверская, д. 7. Перед посещением рекомендуется уточнить маршрут.</p><div class="map-frame"><iframe title="Карта офиса проекта в Москве" src="https://maps.google.com/maps?q=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%B4.%207&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section>
+			</main>
+		</div>
+	<footer class="site-footer">
+		<p><strong>Гостевой дом «Уютный берег»</strong></p>
+		<p>Москва, ул. Тверская, д. 7</p>
+		<p>Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · Почта: <a href="mailto:info@uyutbereg.example">info@uyutbereg.example</a></p>
+		<p class="copyright">Учебный проект · Лабораторная работа № 2</p>
+	</footer>
+	</div>
+	<script src="js/site.js"></script>
 </body>
 </html>
