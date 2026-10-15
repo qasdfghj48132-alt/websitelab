@@ -1,0 +1,47 @@
+/*======= index.html =======*/
+#page1 #content .row-1 .col-1 {width:297px; margin-right:11px;}
+#page1 #content .row-1 .col-2 {width:297px; margin-right:11px;}
+#page1 #content .row-1 .col-3 {width:297px;}
+#page1 #content .row-2 .col-1 {width:297px; margin-right:11px;}
+#page1 #content .row-2 .col-2 {width:297px; margin-right:11px;}
+#page1 #content .row-2 .col-3 {width:297px;}
+#page1 #content .row-2 .col-1 .col-1 {width:116px; margin-right:30px;}
+#page1 #content .row-2 .col-1 .col-2 {width:116px; margin-right:0;}
+
+/*======= index-1.html =======*/
+#page2 #content .row-1 .col-1 {width:606px; margin-right:11px;}
+#page2 #content .row-1 .col-2 {width:297px;}
+#page2 #content .row-1 .col-1 .col-1 {width:254px; margin-right:43px;}
+#page2 #content .row-1 .col-1 .col-2 {width:245px;}
+#page2 #content .row-2 .col-1 {width:606px; margin-right:11px;}
+#page2 #content .row-2 .col-2 {width:297px;}
+#page2 #content .row-2 .col-1 .col-1 {width:254px; margin-right:52px;}
+#page2 #content .row-2 .col-1 .col-2 {width:255px; margin-right:0;}
+
+/*======= index-2.html =======*/
+#page3 #content .row-1 .col-1 {width:297px; margin-right:11px;}
+#page3 #content .row-1 .col-2 {width:297px; margin-right:11px;}
+#page3 #content .row-1 .col-3 {width:297px;}
+#page3 #content .row-2 .col-1 {width:297px; margin-right:11px;}
+#page3 #content .row-2 .col-2 {width:297px; margin-right:11px;}
+#page3 #content .row-2 .col-3 {width:297px;}
+
+/*======= index-3.html =======*/
+#page4 #content .row-1 .col-1 {width:606px; margin-right:11px;}
+#page4 #content .row-1 .col-2 {width:297px;}
+#page4 #content .row-1 .col-1 .col-1 {width:254px; margin-right:43px;}
+#page4 #content .row-1 .col-1 .col-2 {width:245px;}
+#page4 #content .row-2 .col-1 {width:606px; margin-right:11px;}
+#page4 #content .row-2 .col-2 {width:297px;}
+
+/*======= index-4.html =======*/
+#page5 #content .row-1 .col-1 {width:606px; margin-right:11px;}
+#page5 #content .row-1 .col-2 {width:297px;}
+#page5 #content .row-2 .col-1 {width:297px; margin-right:11px;}
+#page5 #content .row-2 .col-2 {width:297px; margin-right:11px;}
+#page5 #content .row-2 .col-3 {width:297px;}
+
+
+/*=========================*/
+
+
