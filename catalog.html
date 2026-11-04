@@ -47,21 +47,72 @@
 				<img class="sidebar-photo" src="images/garden.jpg" alt="Гостевой дом среди зелёного сада">
 			</aside>
 			<main class="main-content">
-				<section class="content-section"><p class="eyebrow">Размещение</p><h2>Выберите свой вариант отдыха</h2><p class="lead">В каждом номере есть собственная ванная комната, полотенца, шкаф для вещей и доступ к Wi-Fi.</p></section>
-				<section class="room-grid">
-					<article class="room-card"><img src="images/room.jpg" alt="Светлый стандартный номер с большой кроватью"><div class="room-copy"><h3>Стандарт</h3><p>Комфортный номер для одного или двух гостей. Подходит для короткой поездки.</p><p class="room-price">от 2 500 ₽ / ночь</p><a href="price.html">Условия и цены →</a></div></article>
-					<article class="room-card"><img src="images/room.jpg" alt="Уютный номер повышенной комфортности"><div class="room-copy"><h3>Комфорт</h3><p>Больше пространства, зона отдыха и дополнительное место по запросу.</p><p class="room-price">от 3 400 ₽ / ночь</p><a href="price.html">Условия и цены →</a></div></article>
+				<section class="content-section">
+					<p class="eyebrow">Размещение</p>
+					<h2>Выберите свой вариант отдыха</h2>
+					<p class="lead">В каждом номере есть собственная ванная комната, полотенца, шкаф для вещей и доступ к Wi-Fi.</p>
 				</section>
-				<section class="service-row" id="breakfast"><img src="images/breakfast.jpg" alt="Завтрак с напитками и свежими продуктами"><div><p class="eyebrow">Дополнительные услуги</p><h2>Завтрак и забота о деталях</h2><p>По предварительному запросу можно заказать завтрак, раннее заселение или трансфер. Доступны хранение багажа и рекомендации по местным достопримечательностям.</p><a class="text-link" href="contacts.html">Уточнить доступность →</a></div></section>
+
+				<section class="filter-panel" aria-labelledby="filter-title">
+					<div class="filter-heading">
+						<div>
+							<p class="eyebrow">Подбор размещения</p>
+							<h2 id="filter-title">Умный фильтр номеров</h2>
+							<p>Выберите параметры — доступные варианты автоматически обновятся.</p>
+						</div>
+						<button class="button button-light filter-reset" id="reset-filters" type="button">Сбросить фильтры</button>
+					</div>
+					<div class="filter-controls">
+						<div class="filter-field">
+							<label for="filter-type">Тип номера</label>
+							<select id="filter-type">
+								<option value="all">Любой тип</option>
+							</select>
+						</div>
+						<div class="filter-field">
+							<label for="filter-guests">Количество гостей</label>
+							<select id="filter-guests">
+								<option value="all">Не важно</option>
+							</select>
+						</div>
+						<div class="filter-field">
+							<label for="filter-price">Максимальная цена за ночь</label>
+							<select id="filter-price">
+								<option value="all">Без ограничения</option>
+							</select>
+						</div>
+						<label class="filter-checkbox" for="filter-extra">
+							<input type="checkbox" id="filter-extra">
+							<span>Нужно дополнительное место</span>
+						</label>
+					</div>
+					<p class="filter-hint">Подсказка: недоступные значения отключаются автоматически, если по ним не останется подходящих номеров.</p>
+					<p class="filter-results" id="filter-results" aria-live="polite">Загружаем варианты…</p>
+				</section>
+
+				<section class="room-grid" id="room-grid" aria-live="polite" aria-label="Подходящие номера">
+					<p>Загружаем номера…</p>
+				</section>
+
+				<section class="service-row" id="breakfast">
+					<img src="images/breakfast.jpg" alt="Завтрак с напитками и свежими продуктами">
+					<div>
+						<p class="eyebrow">Дополнительные услуги</p>
+						<h2>Завтрак и забота о деталях</h2>
+						<p>По предварительному запросу можно заказать завтрак, раннее заселение или трансфер. Доступны хранение багажа и рекомендации по местным достопримечательностям.</p>
+						<a class="text-link" href="contacts.html">Уточнить доступность →</a>
+					</div>
+				</section>
 			</main>
 		</div>
 	<footer class="site-footer">
 		<p><strong>Гостевой дом «Уютный берег»</strong></p>
 		<p>Москва, ул. Тверская, д. 7</p>
 		<p>Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · Почта: <a href="mailto:info@uyutbereg.example">info@uyutbereg.example</a></p>
-		<p class="copyright">Учебный проект · Лабораторная работа № 2</p>
+		<p class="copyright">Учебный проект · Лабораторная работа № 3</p>
 	</footer>
 	</div>
 	<script src="js/site.js"></script>
+	<script src="js/smart-filter.js"></script>
 </body>
 </html>
