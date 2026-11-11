@@ -1,17 +1,9 @@
 // Общие динамические функции сайта «Уютный берег».
 document.addEventListener("DOMContentLoaded", function () {
 	// Переключение между обычным видом и упрощённым видом для печати.
-	const headerCopy = document.querySelector(".header-copy");
+	const printButton = document.getElementById("print-mode-toggle");
 
-	if (headerCopy && !document.getElementById("print-mode-toggle")) {
-		const printButton = document.createElement("button");
-		printButton.type = "button";
-		printButton.id = "print-mode-toggle";
-		printButton.className = "button button-light print-toggle";
-		printButton.setAttribute("aria-pressed", "false");
-		printButton.textContent = "Версия для печати";
-		headerCopy.appendChild(printButton);
-
+	if (printButton) {
 		printButton.addEventListener("click", function () {
 			const enabled = document.body.classList.toggle("print-mode");
 			printButton.setAttribute("aria-pressed", String(enabled));
@@ -19,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			printButton.setAttribute("aria-label", printButton.textContent);
 		});
 	}
-
 	// Существующая форма запроса на бронирование — сохранена без изменения логики.
 	const form = document.getElementById("booking-form");
 	const message = document.getElementById("form-message");
