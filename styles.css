@@ -698,11 +698,15 @@ body.print-mode .brand,
 body.print-mode .main-nav,
 body.print-mode .sidebar,
 body.print-mode .site-footer,
-body.print-mode .print-toggle,
 body.print-mode .filter-panel,
 body.print-mode .service-row,
 body.print-mode .notice-panel {
 	display: none !important;
+}
+/* Кнопка возврата остаётся доступной в режиме печати. */
+body.print-mode .print-toggle {
+	display: inline-block !important;
+	margin-top: 14px;
 }
 body.print-mode .site-header {
 	padding: 12px 0 18px;
