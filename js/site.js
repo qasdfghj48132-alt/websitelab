@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		printButton.addEventListener("click", function () {
 			const enabled = document.body.classList.toggle("print-mode");
 			printButton.setAttribute("aria-pressed", String(enabled));
-			printButton.textContent = enabled ? "Обычная версия" : "Версия для печати";
+			printButton.textContent = enabled ? "Вернуться к обычной версии" : "Версия для печати";
+			printButton.setAttribute("aria-label", printButton.textContent);
 		});
 	}
 
