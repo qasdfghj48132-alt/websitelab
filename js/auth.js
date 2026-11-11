@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const header = document.querySelector('.header-copy');
   if (!header) return;
+  let isAuthenticated = false;
   const button = document.createElement('button');
   button.type = 'button'; button.className = 'button button-light auth-open-button';
   button.textContent = 'Войти / Регистрация';
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
   const open = () => { overlay.classList.add('is-open'); show('login'); dialog.querySelector('input').focus(); };
   const close = () => overlay.classList.remove('is-open');
-  button.addEventListener('click', open);
+  button.addEventListener('click', () => { if (isAuthenticated) location.href='profile.php'; else open(); });
   dialog.querySelector('.auth-close').addEventListener('click', close);
   overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const response = await fetch('auth.php?api=me');
       const data = await response.json(); csrf = data.csrf || '';
-      if (data.user) { button.textContent = 'Личный кабинет'; button.onclick = () => location.href='profile.php'; }
+      if (data.user) { isAuthenticated = true; button.textContent = 'Личный кабинет'; }
     } catch (_) { /* GitHub Pages не исполняет PHP: статическая часть сайта остаётся доступной. */ }
   }
   dialog.querySelector('#auth-login').addEventListener('submit', async e => {
