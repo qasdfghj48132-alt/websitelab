@@ -787,3 +787,35 @@ body.print-mode .room-card img {
 		grid-template-columns: 1fr;
 	}
 }
+
+
+/* Единая строка управляющих кнопок над заголовком сайта */
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.header-actions .print-toggle,
+.header-actions .auth-open-button,
+.header-actions .accessibility-tools {
+  margin: 0;
+}
+.header-actions .accessibility-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-actions .accessibility-panel {
+  flex-basis: 100%;
+}
+@media (max-width: 620px) {
+  .header-actions {
+    align-items: stretch;
+  }
+  .header-actions > .button,
+  .header-actions > .accessibility-tools {
+    max-width: 100%;
+  }
+}
