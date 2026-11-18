@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const button = document.createElement('button');
   button.type = 'button'; button.className = 'button button-light auth-open-button';
   button.textContent = 'Войти / Регистрация';
-  header.appendChild(button);
+  toolbar.appendChild(button);
   const overlay = document.createElement('div');
   overlay.className = 'auth-overlay';
   overlay.innerHTML = `<section class="auth-dialog" role="dialog" aria-modal="true" aria-labelledby="auth-title">
