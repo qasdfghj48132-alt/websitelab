@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const header = document.querySelector('.header-copy');
   if (!header) return;
+  const toolbar = document.getElementById('header-actions') || header;
   let isAuthenticated = false;
   const button = document.createElement('button');
   button.type = 'button'; button.className = 'button button-light auth-open-button';
