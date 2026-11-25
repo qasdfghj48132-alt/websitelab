@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   </section>`;
   document.body.appendChild(overlay);
   const dialog = overlay.querySelector('.auth-dialog'), message = overlay.querySelector('#auth-message');
-  let csrf = '';
   const show = name => {
     ['login','register','forgot'].forEach(n => dialog.querySelector('#auth-'+n).hidden = n !== name);
     dialog.querySelectorAll('[data-tab]').forEach(b => b.classList.toggle('button-light', b.dataset.tab !== name));
@@ -34,16 +33,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   dialog.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => show(b.dataset.tab)));
   async function request(action, form) {
-    const data = new FormData(form); data.append('csrf', csrf);
-    const response = await fetch('auth.php?api='+action, {method:'POST', headers:{'X-CSRF-Token':csrf}, body:data});
-    return response.json();
+    return SiteAPI.post(action, form);
   }
+
   async function refresh() {
     try {
-      const response = await fetch('auth.php?api=me');
-      const data = await response.json(); csrf = data.csrf || '';
-      if (data.user) { isAuthenticated = true; button.textContent = 'Личный кабинет'; }
-    } catch (_) { /* GitHub Pages не исполняет PHP: статическая часть сайта остаётся доступной. */ }
+      const data = await SiteAPI.getSession();
+
+      if (data.user) {
+        isAuthenticated = true;
+        button.textContent = 'Личный кабинет';
+      }
+    } catch (_) {
+      // GitHub Pages не исполняет PHP: статическая часть сайта остаётся доступной.
+    }
   }
   dialog.querySelector('#auth-login').addEventListener('submit', async e => {
     e.preventDefault(); message.textContent = 'Проверяем данные…';
