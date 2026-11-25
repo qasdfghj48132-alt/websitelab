@@ -32,19 +32,55 @@ function h(string $value): string { return htmlspecialchars($value, ENT_QUOTES |
 </form>
 <button class="button button-light" id="profile-logout" type="button">Выйти из аккаунта</button>
 </main>
+<script src="js/api.js"></script>
 <script>
-fetch('auth.php?api=me').then(r=>r.json()).then(d=>{document.getElementById('profile-csrf').value=d.csrf||'';});
-document.getElementById('profile-form').addEventListener('submit',async e=>{
- e.preventDefault();const f=e.currentTarget;const d=new FormData(f);
- const r=await fetch('auth.php?api=profile',{method:'POST',headers:{'X-CSRF-Token':d.get('csrf')},body:d});const x=await r.json();
- document.getElementById('profile-message').textContent=x.message||'Ошибка';
- if(x.ok) location.reload();
-});
-document.getElementById('profile-logout').addEventListener('click',async()=>{
- const t=document.getElementById('profile-csrf').value;
- const d=new FormData();d.append('csrf',t);
- await fetch('auth.php?api=logout',{method:'POST',headers:{'X-CSRF-Token':t},body:d});
- location.href='index.html';
+document.addEventListener('DOMContentLoaded', async function () {
+  const form = document.getElementById('profile-form');
+  const message = document.getElementById('profile-message');
+  const csrfInput = document.getElementById('profile-csrf');
+  const logoutButton = document.getElementById('profile-logout');
+
+  try {
+    const session = await SiteAPI.getSession();
+    csrfInput.value = session.csrf || '';
+  } catch (error) {
+    message.textContent = 'Не удалось получить данные сессии. Обновите страницу.';
+  }
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    message.textContent = 'Сохраняем изменения…';
+
+    try {
+      const result = await SiteAPI.post('profile', form);
+      message.textContent = result.message || 'Изменения сохранены.';
+
+      if (result.ok) {
+        location.reload();
+      }
+    } catch (error) {
+      message.textContent = error.message || 'Не удалось сохранить профиль.';
+    }
+  });
+
+  logoutButton.addEventListener('click', async function () {
+    logoutButton.disabled = true;
+
+    try {
+      const data = new FormData();
+      data.append('csrf', csrfInput.value);
+
+      await SiteAPI.post('logout', data, {
+        csrf: csrfInput.value,
+        requestKey: 'profile-logout'
+      });
+
+      location.href = 'index.html';
+    } catch (error) {
+      logoutButton.disabled = false;
+      message.textContent = error.message || 'Не удалось выйти из аккаунта.';
+    }
+  });
 });
 </script>
 </body></html>
